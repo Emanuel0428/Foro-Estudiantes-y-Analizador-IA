@@ -1,10 +1,13 @@
 ForoNotasIA
+
 Descripción del proyecto
+
 ForoNotasIA es una aplicación web diseñada para la gestión de un foro estudiantil integrado con un analizador de notas impulsado por inteligencia artificial. En esta primera fase, el enfoque está en la construcción del back-end utilizando Spring Boot, con conexión a una base de datos SQL Server mediante JPA/Hibernate, y el desarrollo de la estructura inicial de clases para gestionar las diferentes tablas de la base de datos.
 
 La aplicación proporcionará un foro interactivo donde los estudiantes podrán discutir temas académicos, y un sistema que analizará sus calificaciones, ofreciendo sugerencias basadas en IA para mejorar el rendimiento académico.
 
 Tecnologías utilizadas
+
 Java 21: Lenguaje de programación utilizado para el desarrollo del back-end.
 Spring Boot 3.3.4: Framework para la construcción del back-end, que proporciona facilidad para crear aplicaciones Java empresariales.
 Spring Data JPA: Para el manejo de la persistencia de datos y la conexión con bases de datos relacionales.
