@@ -8,20 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/UsuarioModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Calificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Curso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Departamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Facultad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Publicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Reaccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Rol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/UsuarioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,9 +72,10 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cod28/OneDrive - UPB/Documents/Uni 2024-2/Algoritmos/Taller4_ELO&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,7 +84,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -129,8 +140,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -145,8 +156,36 @@
       <workItem from="1728846550382" duration="3205000" />
       <workItem from="1728850221280" duration="87000" />
       <workItem from="1728950560009" duration="1280000" />
-      <workItem from="1729120476908" duration="750000" />
+      <workItem from="1729120476908" duration="6334000" />
+      <workItem from="1729211715529" duration="2533000" />
+      <workItem from="1729252556972" duration="398000" />
+      <workItem from="1729368058739" duration="76000" />
+      <workItem from="1729534580522" duration="36000" />
+      <workItem from="1729869882659" duration="169000" />
+      <workItem from="1729870073251" duration="688000" />
+      <workItem from="1729967768864" duration="1482000" />
+      <workItem from="1729969464577" duration="2580000" />
+      <workItem from="1730061201565" duration="56000" />
+      <workItem from="1730163929655" duration="746000" />
+      <workItem from="1730242331222" duration="155000" />
     </task>
+    <task id="LOCAL-00001" summary="Fase inicial del desarrollo usando spring boot.">
+      <option name="closed" value="true" />
+      <created>1729121515677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729121515677</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fase inicial del desarrollo usando spring boot.">
+      <option name="closed" value="true" />
+      <created>1729121553689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729121553689</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,5 +201,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fase inicial del desarrollo usando spring boot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fase inicial del desarrollo usando spring boot." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

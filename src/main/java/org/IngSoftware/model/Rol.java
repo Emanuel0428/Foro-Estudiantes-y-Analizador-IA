@@ -1,23 +1,26 @@
 package org.IngSoftware.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Entity
-public class UsuarioModel {
+@Table(name = "roles")
+public class Rol {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre;
-    private String email;
 
-    // Constructor vacío
-    public UsuarioModel() {}
+    @Column(nullable = false, length = 50)
+    private String nombre;
+
+    @ManyToMany(mappedBy = "roles")
+    private Set<Usuario> usuarios = new HashSet<>();
 
     // Getters y Setters
+
     public Long getId() {
         return id;
     }
@@ -33,12 +36,5 @@ public class UsuarioModel {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
+
