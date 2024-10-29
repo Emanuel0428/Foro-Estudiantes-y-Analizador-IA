@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas" />
+    <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Emanuel0428"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Emanuel0428/Foro-Estudiantes-y-Analizador-IA.git",
@@ -149,7 +161,7 @@
       <workItem from="1729969464577" duration="2580000" />
       <workItem from="1730061201565" duration="56000" />
       <workItem from="1730163929655" duration="746000" />
-      <workItem from="1730242331222" duration="721000" />
+      <workItem from="1730242331222" duration="3019000" />
     </task>
     <task id="LOCAL-00001" summary="Fase inicial del desarrollo usando spring boot.">
       <option name="closed" value="true" />
@@ -175,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730243051443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementación modelos de las tablas">
+      <option name="closed" value="true" />
+      <created>1730243166332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730243166332</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +216,17 @@
     <MESSAGE value="Fase inicial del desarrollo usando spring boot." />
     <MESSAGE value="Implementación modelos de las tablas" />
     <option name="LAST_COMMIT_MESSAGE" value="Implementación modelos de las tablas" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

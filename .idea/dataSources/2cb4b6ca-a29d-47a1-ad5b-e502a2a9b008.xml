@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="IngenieriaSoftware@localhost">
+<dataSource name="BD_NOTASFORO@localhost">
   <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.53">
     <root id="1">
       <Grants>2|||2|connect|G
@@ -16567,7 +16567,13 @@
       <CollationName>Modern_Spanish_CI_AS</CollationName>
     </database>
     <database id="5511" parent="1" name="BD_NOTASFORO">
+      <Current>1</Current>
+      <Fingerprint>8.45593/5AAD1482-97AB-4B63-B5C3-DC4743AD7226@Emanuel-PC</Fingerprint>
+      <Grants>8|database||1|connect|G
+8|database||0|view any column encryption key definition|G
+8|database||0|view any column master key definition|G</Grants>
       <ObjectId>8</ObjectId>
+      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
       <CollationName>Modern_Spanish_CI_AS</CollationName>
     </database>
     <database id="5512" parent="1" name="CopaColombia">
@@ -16575,13 +16581,7 @@
       <CollationName>Modern_Spanish_CI_AS</CollationName>
     </database>
     <database id="5513" parent="1" name="IngenieriaSoftware">
-      <Current>1</Current>
-      <Fingerprint>5.45576/45CEC9CA-732B-43A4-B7FA-F6F3495A33A0@Emanuel-PC</Fingerprint>
-      <Grants>5|database||1|connect|G
-5|database||0|view any column encryption key definition|G
-5|database||0|view any column master key definition|G</Grants>
       <ObjectId>5</ObjectId>
-      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
       <CollationName>Modern_Spanish_CI_AS</CollationName>
     </database>
     <database id="5514" parent="1" name="master">
@@ -16796,949 +16796,606 @@
       <Enabled>1</Enabled>
       <ObjectId>266</ObjectId>
     </login>
-    <assembly id="5555" parent="5513" name="Microsoft.SqlServer.Types">
+    <assembly id="5555" parent="5511" name="Microsoft.SqlServer.Types">
       <ObjectId>1</ObjectId>
       <Visible>1</Visible>
     </assembly>
-    <filegroup id="5556" parent="5513" name="PRIMARY">
+    <filegroup id="5556" parent="5511" name="PRIMARY">
       <DefaultGroup>1</DefaultGroup>
       <ObjectId>1</ObjectId>
     </filegroup>
-    <role id="5557" parent="5513" name="INFORMATION_SCHEMA">
-      <AuthType>none</AuthType>
-      <ObjectId>3</ObjectId>
-    </role>
-    <role id="5558" parent="5513" name="db_accessadmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16385</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5559" parent="5513" name="db_backupoperator">
-      <AuthType>none</AuthType>
-      <ObjectId>16389</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5560" parent="5513" name="db_datareader">
-      <AuthType>none</AuthType>
-      <ObjectId>16390</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5561" parent="5513" name="db_datawriter">
-      <AuthType>none</AuthType>
-      <ObjectId>16391</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5562" parent="5513" name="db_ddladmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16387</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5563" parent="5513" name="db_denydatareader">
-      <AuthType>none</AuthType>
-      <ObjectId>16392</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5564" parent="5513" name="db_denydatawriter">
-      <AuthType>none</AuthType>
-      <ObjectId>16393</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5565" parent="5513" name="db_owner">
-      <AuthType>none</AuthType>
-      <ObjectId>16384</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5566" parent="5513" name="db_securityadmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16386</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5567" parent="5513" name="dbo">
-      <AuthType>windows</AuthType>
-      <DefaultSchema>dbo</DefaultSchema>
-      <ObjectId>1</ObjectId>
-      <Type>windows-user</Type>
-    </role>
-    <role id="5568" parent="5513" name="guest">
-      <AuthType>none</AuthType>
-      <DefaultSchema>guest</DefaultSchema>
-      <ObjectId>2</ObjectId>
-    </role>
-    <role id="5569" parent="5513" name="public">
+    <role id="5557" parent="5511" name="public">
       <AuthType>none</AuthType>
       <ObjectId>0</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5570" parent="5513" name="sys">
+    <role id="5558" parent="5511" name="dbo">
+      <AuthType>instance</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+    </role>
+    <role id="5559" parent="5511" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="5560" parent="5511" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="5561" parent="5511" name="sys">
       <AuthType>none</AuthType>
       <ObjectId>4</ObjectId>
     </role>
-    <schema id="5571" parent="5513" name="INFORMATION_SCHEMA">
+    <role id="5562" parent="5511" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5563" parent="5511" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5564" parent="5511" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5565" parent="5511" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5566" parent="5511" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5567" parent="5511" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5568" parent="5511" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5569" parent="5511" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5570" parent="5511" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <schema id="5571" parent="5511" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="5572" parent="5513" name="db_accessadmin">
+    <schema id="5572" parent="5511" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="5573" parent="5513" name="db_backupoperator">
+    <schema id="5573" parent="5511" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="5574" parent="5513" name="db_datareader">
+    <schema id="5574" parent="5511" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="5575" parent="5513" name="db_datawriter">
+    <schema id="5575" parent="5511" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="5576" parent="5513" name="db_ddladmin">
+    <schema id="5576" parent="5511" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="5577" parent="5513" name="db_denydatareader">
+    <schema id="5577" parent="5511" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="5578" parent="5513" name="db_denydatawriter">
+    <schema id="5578" parent="5511" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <schema id="5579" parent="5513" name="db_owner">
+    <schema id="5579" parent="5511" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="5580" parent="5513" name="db_securityadmin">
+    <schema id="5580" parent="5511" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="5581" parent="5513" name="dbo">
+    <schema id="5581" parent="5511" name="dbo">
       <Current>1</Current>
-      <DescriptionsCheckSum>9790202270</DescriptionsCheckSum>
-      <Grants>1909581841|||0|execute|G
-1909581841|||2|execute|D
-1925581898|||0|execute|G
-1925581898|||2|execute|D
-1941581955|||0|execute|G
-1941581955|||2|execute|D
-1957582012|||0|execute|G
-1957582012|||2|execute|D
-1973582069|||0|execute|G
-1973582069|||2|execute|D
-1989582126|||0|execute|G
-1989582126|||2|execute|D
-2005582183|||0|execute|G
-2005582183|||2|execute|D</Grants>
-      <IntrospectionTimestamp>2024-10-29.13:32:00.870</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-10-29.23:32:00</LastIntrospectionLocalTimestamp>
+      <DescriptionsCheckSum>8642311876</DescriptionsCheckSum>
+      <Grants>1205579333|||0|execute|G
+1205579333|||2|execute|D
+1221579390|||0|execute|G
+1221579390|||2|execute|D
+1237579447|||0|execute|G
+1237579447|||2|execute|D
+1253579504|||0|execute|G
+1253579504|||2|execute|D
+1269579561|||0|execute|G
+1269579561|||2|execute|D
+1285579618|||0|execute|G
+1285579618|||2|execute|D
+1301579675|||0|execute|G
+1301579675|||2|execute|D</Grants>
+      <IntrospectionTimestamp>2024-10-29.13:34:14.093</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-29.23:34:14</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
-      <PermissionsCheckSum>16147333695</PermissionsCheckSum>
+      <PermissionsCheckSum>16048934977</PermissionsCheckSum>
     </schema>
-    <schema id="5582" parent="5513" name="guest">
+    <schema id="5582" parent="5511" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="5583" parent="5513" name="sys">
+    <schema id="5583" parent="5511" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
     <routine id="5584" parent="5581" name="fn_diagramobjects">
-      <CreatedTimestamp>2024-10-16.13:16:58.710</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.547</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.710</ModifiedTimestamp>
-      <ObjectId>2005582183</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.547</ModifiedTimestamp>
+      <ObjectId>1301579675</ObjectId>
       <RoutineType>scalar-fun</RoutineType>
       <SourceTextLength>1647</SourceTextLength>
     </routine>
     <routine id="5585" parent="5581" name="sp_alterdiagram">
-      <CreatedTimestamp>2024-10-16.13:16:58.703</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.540</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.703</ModifiedTimestamp>
-      <ObjectId>1973582069</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.540</ModifiedTimestamp>
+      <ObjectId>1269579561</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1501</SourceTextLength>
     </routine>
     <routine id="5586" parent="5581" name="sp_creatediagram">
-      <CreatedTimestamp>2024-10-16.13:16:58.693</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.530</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.693</ModifiedTimestamp>
-      <ObjectId>1941581955</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.530</ModifiedTimestamp>
+      <ObjectId>1237579447</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1223</SourceTextLength>
     </routine>
     <routine id="5587" parent="5581" name="sp_dropdiagram">
-      <CreatedTimestamp>2024-10-16.13:16:58.710</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.543</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.710</ModifiedTimestamp>
-      <ObjectId>1989582126</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.543</ModifiedTimestamp>
+      <ObjectId>1285579618</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>896</SourceTextLength>
     </routine>
     <routine id="5588" parent="5581" name="sp_helpdiagramdefinition">
-      <CreatedTimestamp>2024-10-16.13:16:58.690</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.527</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.690</ModifiedTimestamp>
-      <ObjectId>1925581898</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.527</ModifiedTimestamp>
+      <ObjectId>1221579390</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>921</SourceTextLength>
     </routine>
     <routine id="5589" parent="5581" name="sp_helpdiagrams">
-      <CreatedTimestamp>2024-10-16.13:16:58.683</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.523</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.683</ModifiedTimestamp>
-      <ObjectId>1909581841</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.523</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>658</SourceTextLength>
     </routine>
     <routine id="5590" parent="5581" name="sp_renamediagram">
-      <CreatedTimestamp>2024-10-16.13:16:58.700</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.537</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.700</ModifiedTimestamp>
-      <ObjectId>1957582012</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.537</ModifiedTimestamp>
+      <ObjectId>1253579504</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1721</SourceTextLength>
     </routine>
     <routine id="5591" parent="5581" name="sp_upgraddiagrams">
-      <CreatedTimestamp>2024-10-16.13:16:58.653</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.13:30:08.510</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.653</ModifiedTimestamp>
-      <ObjectId>1845581613</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.510</ModifiedTimestamp>
+      <ObjectId>1141579105</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1463</SourceTextLength>
     </routine>
-    <table id="5592" parent="5581" name="calificaciones">
-      <CreatedTimestamp>2024-10-13.05:45:24.307</CreatedTimestamp>
+    <table id="5592" parent="5581" name="Comentarios">
+      <CreatedTimestamp>2024-10-29.13:29:41.627</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.307</ModifiedTimestamp>
-      <ObjectId>1061578820</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:29:41.653</ModifiedTimestamp>
+      <ObjectId>901578250</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5593" parent="5581" name="comentarios">
-      <CreatedTimestamp>2024-10-13.05:45:24.310</CreatedTimestamp>
+    <table id="5593" parent="5581" name="Publicaciones">
+      <CreatedTimestamp>2024-10-29.13:29:41.633</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <ObjectId>1189579276</ObjectId>
-      <LobDataSpaceId>1</LobDataSpaceId>
-    </table>
-    <table id="5594" parent="5581" name="cursos">
-      <CreatedTimestamp>2024-10-13.05:45:24.303</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-17.14:47:51.337</ModifiedTimestamp>
-      <ObjectId>1013578649</ObjectId>
-      <LobDataSpaceId>1</LobDataSpaceId>
-    </table>
-    <table id="5595" parent="5581" name="departamentos">
-      <CreatedTimestamp>2024-10-13.05:45:24.300</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.303</ModifiedTimestamp>
-      <ObjectId>965578478</ObjectId>
-      <LobDataSpaceId>1</LobDataSpaceId>
-    </table>
-    <table id="5596" parent="5581" name="facultades">
-      <CreatedTimestamp>2024-10-13.05:45:24.297</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.303</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.660</ModifiedTimestamp>
       <ObjectId>933578364</ObjectId>
-      <LobDataSpaceId>1</LobDataSpaceId>
-    </table>
-    <table id="5597" parent="5581" name="publicaciones">
-      <CreatedTimestamp>2024-10-13.05:45:24.310</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1125579048</ObjectId>
-      <LobDataSpaceId>1</LobDataSpaceId>
-    </table>
-    <table id="5598" parent="5581" name="reacciones">
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <ObjectId>1269579561</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5599" parent="5581" name="reacciones_comentarios">
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
+    <table id="5594" parent="5581" name="Roles">
+      <CreatedTimestamp>2024-10-29.13:29:41.637</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1381579960</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:29:41.663</ModifiedTimestamp>
+      <ObjectId>965578478</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5600" parent="5581" name="reacciones_publicaciones">
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
+    <table id="5595" parent="5581" name="Roles x Usuario">
+      <CreatedTimestamp>2024-10-29.13:29:41.640</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1301579675</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:29:41.667</ModifiedTimestamp>
+      <ObjectId>997578592</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5601" parent="5581" name="roles">
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
+    <table id="5596" parent="5581" name="Usuario">
+      <CreatedTimestamp>2024-10-29.13:29:41.647</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <ObjectId>1461580245</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:29:41.667</ModifiedTimestamp>
+      <ObjectId>1029578706</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5602" parent="5581" name="sysdiagrams">
-      <CreatedTimestamp>2024-10-16.13:16:58.663</CreatedTimestamp>
+    <table id="5597" parent="5581" name="sysdiagrams">
+      <CreatedTimestamp>2024-10-29.13:30:08.510</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-16.13:16:58.663</ModifiedTimestamp>
-      <ObjectId>1861581670</ObjectId>
+      <ModifiedTimestamp>2024-10-29.13:30:08.510</ModifiedTimestamp>
+      <ObjectId>1157579162</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5603" parent="5581" name="usuarios">
-      <CreatedTimestamp>2024-10-13.05:45:24.293</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <ObjectId>901578250</ObjectId>
-      <LobDataSpaceId>0</LobDataSpaceId>
-    </table>
-    <table id="5604" parent="5581" name="usuarios_roles">
-      <CreatedTimestamp>2024-10-13.05:45:24.323</CreatedTimestamp>
-      <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <ObjectId>1493580359</ObjectId>
-      <LobDataSpaceId>0</LobDataSpaceId>
-    </table>
-    <argument id="5605" parent="5584">
+    <argument id="5598" parent="5584">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5606" parent="5585" name="@diagramname">
+    <argument id="5599" parent="5585" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5607" parent="5585" name="@owner_id">
+    <argument id="5600" parent="5585" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5608" parent="5585" name="@version">
+    <argument id="5601" parent="5585" name="@version">
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5609" parent="5585" name="@definition">
+    <argument id="5602" parent="5585" name="@definition">
       <Position>4</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </argument>
-    <argument id="5610" parent="5586" name="@diagramname">
+    <argument id="5603" parent="5586" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5611" parent="5586" name="@owner_id">
+    <argument id="5604" parent="5586" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5612" parent="5586" name="@version">
+    <argument id="5605" parent="5586" name="@version">
       <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5613" parent="5586" name="@definition">
+    <argument id="5606" parent="5586" name="@definition">
       <Position>4</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </argument>
-    <argument id="5614" parent="5587" name="@diagramname">
+    <argument id="5607" parent="5587" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5615" parent="5587" name="@owner_id">
+    <argument id="5608" parent="5587" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5616" parent="5588" name="@diagramname">
+    <argument id="5609" parent="5588" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5617" parent="5588" name="@owner_id">
+    <argument id="5610" parent="5588" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5618" parent="5589" name="@diagramname">
+    <argument id="5611" parent="5589" name="@diagramname">
       <DefaultExpression>NULL</DefaultExpression>
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5619" parent="5589" name="@owner_id">
+    <argument id="5612" parent="5589" name="@owner_id">
       <DefaultExpression>NULL</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5620" parent="5590" name="@diagramname">
+    <argument id="5613" parent="5590" name="@diagramname">
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <argument id="5621" parent="5590" name="@owner_id">
+    <argument id="5614" parent="5590" name="@owner_id">
       <DefaultExpression>null</DefaultExpression>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </argument>
-    <argument id="5622" parent="5590" name="@new_diagramname">
+    <argument id="5615" parent="5590" name="@new_diagramname">
       <Position>3</Position>
       <StoredType>sysname|0s</StoredType>
     </argument>
-    <column id="5623" parent="5592" name="id">
+    <column id="5616" parent="5592" name="IdComentarios">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(4)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5624" parent="5592" name="id_usuario">
+    <column id="5617" parent="5592" name="IdPublicaciones">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5625" parent="5592" name="id_curso">
+    <column id="5618" parent="5592" name="DocId">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5626" parent="5592" name="valor_calificacion">
+    <column id="5619" parent="5592" name="Contenido">
+      <NotNull>1</NotNull>
       <Position>4</Position>
-      <StoredType>decimal(5,2)|0s</StoredType>
+      <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="5627" parent="5592" name="fecha_calificacion">
-      <Position>5</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <column id="5628" parent="5592" name="tipo_calificacion">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StoredType>nvarchar(50 char)|0s</StoredType>
-    </column>
-    <foreign-key id="5629" parent="5592" name="FK_calificaciones_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.307</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.307</ModifiedTimestamp>
-      <ObjectId>1093578934</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5630" parent="5592" name="FK_calificaciones_cursos">
-      <ColNames>id_curso</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.307</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.307</ModifiedTimestamp>
-      <ObjectId>1109578991</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1013578649</RefTableId>
-      <RefTableName>cursos</RefTableName>
-    </foreign-key>
-    <index id="5631" parent="5592" name="PK__califica__3213E83F46FE2209">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5632" parent="5592" name="PK__califica__3213E83F46FE2209">
-      <CreatedTimestamp>2024-10-13.05:45:24.307</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.307</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1077578877</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__califica__3213E83F46FE2209</UnderlyingIndexName>
-    </key>
-    <column id="5633" parent="5593" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5634" parent="5593" name="id_publicacion">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5635" parent="5593" name="id_usuario">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5636" parent="5593" name="id_comentario_padre">
-      <Position>4</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5637" parent="5593" name="contenido">
+    <column id="5620" parent="5592" name="Fecha_Creacion">
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StoredType>nvarchar(max)|0s</StoredType>
+      <StoredType>date|0s</StoredType>
     </column>
-    <column id="5638" parent="5593" name="fecha_creacion">
+    <column id="5621" parent="5592" name="Fecha_Ultima_Edicion">
+      <NotNull>1</NotNull>
       <Position>6</Position>
-      <StoredType>datetime2|0s</StoredType>
+      <StoredType>date|0s</StoredType>
     </column>
-    <column id="5639" parent="5593" name="fecha_ultima_edicion">
-      <Position>7</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <column id="5640" parent="5593" name="estado_comentario">
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-      <StoredType>nvarchar(20 char)|0s</StoredType>
-    </column>
-    <foreign-key id="5641" parent="5593" name="FK_comentarios_publicaciones">
-      <ColNames>id_publicacion</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.313</ModifiedTimestamp>
-      <ObjectId>1221579390</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1125579048</RefTableId>
-      <RefTableName>publicaciones</RefTableName>
-    </foreign-key>
-    <foreign-key id="5642" parent="5593" name="FK_comentarios_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.313</ModifiedTimestamp>
-      <ObjectId>1237579447</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5643" parent="5593" name="FK_comentarios_comentario_padre">
-      <ColNames>id_comentario_padre</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.313</ModifiedTimestamp>
-      <ObjectId>1253579504</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1189579276</RefTableId>
-      <RefTableName>comentarios</RefTableName>
-    </foreign-key>
-    <index id="5644" parent="5593" name="PK__comentar__3213E83F6D2F03AD">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5645" parent="5593" name="PK__comentar__3213E83F6D2F03AD">
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.313</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1205579333</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__comentar__3213E83F6D2F03AD</UnderlyingIndexName>
-    </key>
-    <column id="5646" parent="5594" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(5)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5647" parent="5594" name="id_departamento">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5648" parent="5594" name="nombre">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
-    </column>
-    <column id="5649" parent="5594" name="descripcion">
-      <Position>4</Position>
-      <StoredType>nvarchar(max)|0s</StoredType>
-    </column>
-    <foreign-key id="5650" parent="5594" name="FK_cursos_departamentos">
-      <ColNames>id_departamento</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.303</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.303</ModifiedTimestamp>
-      <ObjectId>1045578763</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>965578478</RefTableId>
-      <RefTableName>departamentos</RefTableName>
-    </foreign-key>
-    <index id="5651" parent="5594" name="PK__cursos__3213E83F8BB2D551">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5652" parent="5594" name="PK__cursos__3213E83F8BB2D551">
-      <CreatedTimestamp>2024-10-13.05:45:24.303</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.303</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1029578706</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__cursos__3213E83F8BB2D551</UnderlyingIndexName>
-    </key>
-    <column id="5653" parent="5595" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(4)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5654" parent="5595" name="id_facultad">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5655" parent="5595" name="nombre">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
-    </column>
-    <column id="5656" parent="5595" name="descripcion">
-      <Position>4</Position>
-      <StoredType>nvarchar(max)|0s</StoredType>
-    </column>
-    <foreign-key id="5657" parent="5595" name="FK_departamentos_facultades">
-      <ColNames>id_facultad</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.300</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.300</ModifiedTimestamp>
-      <ObjectId>997578592</ObjectId>
-      <RefColNames>id</RefColNames>
+    <foreign-key id="5622" parent="5592" name="FK_Comentarios_Publicaciones">
+      <ColNames>IdPublicaciones</ColNames>
+      <CreatedTimestamp>2024-10-29.13:29:41.650</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.650</ModifiedTimestamp>
+      <ObjectId>1061578820</ObjectId>
+      <RefColNames>IdPublicaciones</RefColNames>
       <RefTableId>933578364</RefTableId>
-      <RefTableName>facultades</RefTableName>
+      <RefTableName>Publicaciones</RefTableName>
     </foreign-key>
-    <index id="5658" parent="5595" name="PK__departam__3213E83F87D6053C">
+    <foreign-key id="5623" parent="5592" name="FK_Comentarios_Usuario">
+      <ColNames>DocId</ColNames>
+      <CreatedTimestamp>2024-10-29.13:29:41.653</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.653</ModifiedTimestamp>
+      <ObjectId>1077578877</ObjectId>
+      <RefColNames>DocId</RefColNames>
+      <RefTableId>1029578706</RefTableId>
+      <RefTableName>Usuario</RefTableName>
+    </foreign-key>
+    <index id="5624" parent="5592" name="PK_Comentarios">
       <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdComentarios</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5659" parent="5595" name="PK__departam__3213E83F87D6053C">
-      <CreatedTimestamp>2024-10-13.05:45:24.300</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.300</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>981578535</ObjectId>
+    <key id="5625" parent="5592" name="PK_Comentarios">
+      <CreatedTimestamp>2024-10-29.13:29:41.630</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.630</ModifiedTimestamp>
+      <ObjectId>917578307</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__departam__3213E83F87D6053C</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_Comentarios</UnderlyingIndexName>
     </key>
-    <column id="5660" parent="5596" name="id">
+    <column id="5626" parent="5593" name="IdPublicaciones">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5661" parent="5596" name="nombre">
+    <column id="5627" parent="5593" name="DocId">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5662" parent="5596" name="descripcion">
+    <column id="5628" parent="5593" name="IdCurso">
+      <NotNull>1</NotNull>
       <Position>3</Position>
-      <StoredType>nvarchar(max)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <index id="5663" parent="5596" name="PK__facultad__3213E83FACBDFD0F">
+    <column id="5629" parent="5593" name="Titulo">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(50 char)|0s</StoredType>
+    </column>
+    <column id="5630" parent="5593" name="Contenido">
+      <Position>5</Position>
+      <StoredType>varchar(50 char)|0s</StoredType>
+    </column>
+    <column id="5631" parent="5593" name="Fecha_Creacion">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(50 char)|0s</StoredType>
+    </column>
+    <column id="5632" parent="5593" name="Fecha_Ultima_Edicion">
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(50 char)|0s</StoredType>
+    </column>
+    <foreign-key id="5633" parent="5593" name="FK_Publicaciones_Usuario">
+      <ColNames>DocId</ColNames>
+      <CreatedTimestamp>2024-10-29.13:29:41.660</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.660</ModifiedTimestamp>
+      <ObjectId>1093578934</ObjectId>
+      <RefColNames>DocId</RefColNames>
+      <RefTableId>1029578706</RefTableId>
+      <RefTableName>Usuario</RefTableName>
+    </foreign-key>
+    <index id="5634" parent="5593" name="PK_Publicaciones">
       <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdPublicaciones</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5664" parent="5596" name="PK__facultad__3213E83FACBDFD0F">
-      <CreatedTimestamp>2024-10-13.05:45:24.300</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.300</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
+    <key id="5635" parent="5593" name="PK_Publicaciones">
+      <CreatedTimestamp>2024-10-29.13:29:41.633</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.633</ModifiedTimestamp>
       <ObjectId>949578421</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__facultad__3213E83FACBDFD0F</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_Publicaciones</UnderlyingIndexName>
     </key>
-    <column id="5665" parent="5597" name="id">
+    <column id="5636" parent="5594" name="IdRol">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5666" parent="5597" name="id_usuario">
+    <column id="5637" parent="5594" name="DescpRol">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>varchar(50 char)|0s</StoredType>
     </column>
-    <column id="5667" parent="5597" name="id_curso">
+    <index id="5638" parent="5594" name="PK_Roles">
+      <Clustering>1</Clustering>
+      <ColNames>IdRol</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5639" parent="5594" name="PK_Roles">
+      <CreatedTimestamp>2024-10-29.13:29:41.640</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.640</ModifiedTimestamp>
+      <ObjectId>981578535</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Roles</UnderlyingIndexName>
+    </key>
+    <column id="5640" parent="5595" name="DocId">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5641" parent="5595" name="IdRol">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="5642" parent="5595" name="FK_Roles x Usuario_Usuario">
+      <ColNames>DocId</ColNames>
+      <CreatedTimestamp>2024-10-29.13:29:41.667</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.667</ModifiedTimestamp>
+      <ObjectId>1125579048</ObjectId>
+      <RefColNames>DocId</RefColNames>
+      <RefTableId>1029578706</RefTableId>
+      <RefTableName>Usuario</RefTableName>
+    </foreign-key>
+    <foreign-key id="5643" parent="5595" name="FK_Roles x Usuario_Roles">
+      <ColNames>IdRol</ColNames>
+      <CreatedTimestamp>2024-10-29.13:29:41.663</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.663</ModifiedTimestamp>
+      <ObjectId>1109578991</ObjectId>
+      <RefColNames>IdRol</RefColNames>
+      <RefTableId>965578478</RefTableId>
+      <RefTableName>Roles</RefTableName>
+    </foreign-key>
+    <index id="5644" parent="5595" name="PK_Roles x Usuario">
+      <Clustering>1</Clustering>
+      <ColNames>DocId
+IdRol</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5645" parent="5595" name="PK_Roles x Usuario">
+      <CreatedTimestamp>2024-10-29.13:29:41.643</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.643</ModifiedTimestamp>
+      <ObjectId>1013578649</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Roles x Usuario</UnderlyingIndexName>
+    </key>
+    <column id="5646" parent="5596" name="DocId">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5647" parent="5596" name="Nombre">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(10 char)|0s</StoredType>
+    </column>
+    <column id="5648" parent="5596" name="Correo">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StoredType>bigint|0s</StoredType>
+      <StoredType>varchar(10 char)|0s</StoredType>
     </column>
-    <column id="5668" parent="5597" name="titulo">
-      <NotNull>1</NotNull>
+    <column id="5649" parent="5596" name="Contraseña">
       <Position>4</Position>
-      <StoredType>nvarchar(200 char)|0s</StoredType>
+      <StoredType>varbinary(10 char)|0s</StoredType>
     </column>
-    <column id="5669" parent="5597" name="contenido">
+    <column id="5650" parent="5596" name="Fecha_Registro">
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StoredType>nvarchar(max)|0s</StoredType>
+      <StoredType>date|0s</StoredType>
     </column>
-    <column id="5670" parent="5597" name="fecha_creacion">
-      <Position>6</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <column id="5671" parent="5597" name="fecha_ultima_edicion">
-      <Position>7</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <column id="5672" parent="5597" name="estado_publicacion">
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-      <StoredType>nvarchar(20 char)|0s</StoredType>
-    </column>
-    <foreign-key id="5673" parent="5597" name="FK_publicaciones_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.310</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.310</ModifiedTimestamp>
-      <ObjectId>1157579162</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5674" parent="5597" name="FK_publicaciones_cursos">
-      <ColNames>id_curso</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.310</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.310</ModifiedTimestamp>
-      <ObjectId>1173579219</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1013578649</RefTableId>
-      <RefTableName>cursos</RefTableName>
-    </foreign-key>
-    <index id="5675" parent="5597" name="PK__publicac__3213E83F80812FCD">
+    <index id="5651" parent="5596" name="PK_Usuario">
       <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
+      <ColNames>DocId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5676" parent="5597" name="PK__publicac__3213E83F80812FCD">
-      <CreatedTimestamp>2024-10-13.05:45:24.310</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.310</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1141579105</ObjectId>
+    <key id="5652" parent="5596" name="PK_Usuario">
+      <CreatedTimestamp>2024-10-29.13:29:41.647</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:29:41.647</ModifiedTimestamp>
+      <ObjectId>1045578763</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__publicac__3213E83F80812FCD</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_Usuario</UnderlyingIndexName>
     </key>
-    <column id="5677" parent="5598" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5678" parent="5598" name="tipo">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>nvarchar(50 char)|0s</StoredType>
-    </column>
-    <index id="5679" parent="5598" name="PK__reaccion__3213E83F9F81EEB2">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5680" parent="5598" name="PK__reaccion__3213E83F9F81EEB2">
-      <CreatedTimestamp>2024-10-13.05:45:24.313</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.313</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1285579618</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__reaccion__3213E83F9F81EEB2</UnderlyingIndexName>
-    </key>
-    <column id="5681" parent="5599" name="id_comentario">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5682" parent="5599" name="id_usuario">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5683" parent="5599" name="id_reaccion">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5684" parent="5599" name="fecha_reaccion">
-      <Position>4</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <foreign-key id="5685" parent="5599" name="FK_reacciones_comentarios_comentarios">
-      <ColNames>id_comentario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <ObjectId>1413580074</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1189579276</RefTableId>
-      <RefTableName>comentarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5686" parent="5599" name="FK_reacciones_comentarios_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <ObjectId>1429580131</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5687" parent="5599" name="FK_reacciones_comentarios_reacciones">
-      <ColNames>id_reaccion</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <ObjectId>1445580188</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1269579561</RefTableId>
-      <RefTableName>reacciones</RefTableName>
-    </foreign-key>
-    <index id="5688" parent="5599" name="PK__reaccion__E5D223C096142AFF">
-      <Clustering>1</Clustering>
-      <ColNames>id_comentario
-id_usuario
-id_reaccion</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5689" parent="5599" name="PK__reaccion__E5D223C096142AFF">
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1397580017</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__reaccion__E5D223C096142AFF</UnderlyingIndexName>
-    </key>
-    <column id="5690" parent="5600" name="id_publicacion">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5691" parent="5600" name="id_usuario">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5692" parent="5600" name="id_reaccion">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5693" parent="5600" name="fecha_reaccion">
-      <Position>4</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <foreign-key id="5694" parent="5600" name="FK_reacciones_publicaciones_publicaciones">
-      <ColNames>id_publicacion</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1333579789</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1125579048</RefTableId>
-      <RefTableName>publicaciones</RefTableName>
-    </foreign-key>
-    <foreign-key id="5695" parent="5600" name="FK_reacciones_publicaciones_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1349579846</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5696" parent="5600" name="FK_reacciones_publicaciones_reacciones">
-      <ColNames>id_reaccion</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <ObjectId>1365579903</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1269579561</RefTableId>
-      <RefTableName>reacciones</RefTableName>
-    </foreign-key>
-    <index id="5697" parent="5600" name="PK__reaccion__824CB447FEBAD410">
-      <Clustering>1</Clustering>
-      <ColNames>id_publicacion
-id_usuario
-id_reaccion</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5698" parent="5600" name="PK__reaccion__824CB447FEBAD410">
-      <CreatedTimestamp>2024-10-13.05:45:24.317</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.317</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1317579732</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__reaccion__824CB447FEBAD410</UnderlyingIndexName>
-    </key>
-    <column id="5699" parent="5601" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5700" parent="5601" name="nombre">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>nvarchar(50 char)|0s</StoredType>
-    </column>
-    <index id="5701" parent="5601" name="PK__roles__3213E83FE17AB991">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5702" parent="5601" name="PK__roles__3213E83FE17AB991">
-      <CreatedTimestamp>2024-10-13.05:45:24.320</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.320</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1477580302</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__roles__3213E83FE17AB991</UnderlyingIndexName>
-    </key>
-    <column id="5703" parent="5602" name="name">
+    <column id="5653" parent="5597" name="name">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
     </column>
-    <column id="5704" parent="5602" name="principal_id">
+    <column id="5654" parent="5597" name="principal_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5705" parent="5602" name="diagram_id">
+    <column id="5655" parent="5597" name="diagram_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <SequenceIdentity>1(2)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5706" parent="5602" name="version">
+    <column id="5656" parent="5597" name="version">
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5707" parent="5602" name="definition">
+    <column id="5657" parent="5597" name="definition">
       <Position>5</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </column>
-    <index id="5708" parent="5602" name="PK__sysdiagr__C2B05B6119EA6820">
+    <index id="5658" parent="5597" name="PK__sysdiagr__C2B05B616B8F2093">
       <Clustering>1</Clustering>
       <ColNames>diagram_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17746,112 +17403,26 @@ id_reaccion</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5709" parent="5602" name="UK_principal_name">
+    <index id="5659" parent="5597" name="UK_principal_name">
       <ColNames>principal_id
 name</ColNames>
       <Position>2</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5710" parent="5602" name="PK__sysdiagr__C2B05B6119EA6820">
-      <CreatedTimestamp>2024-10-16.13:16:58.673</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-16.13:16:58.673</ModifiedTimestamp>
+    <key id="5660" parent="5597" name="PK__sysdiagr__C2B05B616B8F2093">
+      <CreatedTimestamp>2024-10-29.13:30:08.510</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:30:08.510</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1877581727</ObjectId>
+      <ObjectId>1173579219</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__sysdiagr__C2B05B6119EA6820</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B616B8F2093</UnderlyingIndexName>
     </key>
-    <key id="5711" parent="5602" name="UK_principal_name">
-      <CreatedTimestamp>2024-10-16.13:16:58.680</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-16.13:16:58.680</ModifiedTimestamp>
-      <ObjectId>1893581784</ObjectId>
+    <key id="5661" parent="5597" name="UK_principal_name">
+      <CreatedTimestamp>2024-10-29.13:30:08.513</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.13:30:08.513</ModifiedTimestamp>
+      <ObjectId>1189579276</ObjectId>
       <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
-    </key>
-    <column id="5712" parent="5603" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(4)</SequenceIdentity>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5713" parent="5603" name="nombre">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
-    </column>
-    <column id="5714" parent="5603" name="correo">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
-    </column>
-    <column id="5715" parent="5603" name="contraseña">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StoredType>nvarchar(100 char)|0s</StoredType>
-    </column>
-    <column id="5716" parent="5603" name="fecha_registro">
-      <Position>5</Position>
-      <StoredType>datetime2|0s</StoredType>
-    </column>
-    <index id="5717" parent="5603" name="PK__usuarios__3213E83F3925AE6E">
-      <Clustering>1</Clustering>
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5718" parent="5603" name="PK__usuarios__3213E83F3925AE6E">
-      <CreatedTimestamp>2024-10-13.05:45:24.293</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.293</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>917578307</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__usuarios__3213E83F3925AE6E</UnderlyingIndexName>
-    </key>
-    <column id="5719" parent="5604" name="id_usuario">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <column id="5720" parent="5604" name="id_rol">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StoredType>bigint|0s</StoredType>
-    </column>
-    <foreign-key id="5721" parent="5604" name="FK_usuarios_roles_usuarios">
-      <ColNames>id_usuario</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.323</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <ObjectId>1525580473</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>901578250</RefTableId>
-      <RefTableName>usuarios</RefTableName>
-    </foreign-key>
-    <foreign-key id="5722" parent="5604" name="FK_usuarios_roles_roles">
-      <ColNames>id_rol</ColNames>
-      <CreatedTimestamp>2024-10-13.05:45:24.323</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <ObjectId>1541580530</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1461580245</RefTableId>
-      <RefTableName>roles</RefTableName>
-    </foreign-key>
-    <index id="5723" parent="5604" name="PK__usuarios__5895CFF36AD39E7C">
-      <Clustering>1</Clustering>
-      <ColNames>id_usuario
-id_rol</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5724" parent="5604" name="PK__usuarios__5895CFF36AD39E7C">
-      <CreatedTimestamp>2024-10-13.05:45:24.323</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-13.05:45:24.323</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1509580416</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__usuarios__5895CFF36AD39E7C</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
