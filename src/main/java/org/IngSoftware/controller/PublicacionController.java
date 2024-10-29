@@ -1,6 +1,6 @@
 package org.IngSoftware.controller;
 
-import org.IngSoftware.model.Publicacion;
+import org.IngSoftware.model.Publicaciones;
 import org.IngSoftware.service.PublicacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,18 +19,18 @@ public class PublicacionController {
     }
 
     @GetMapping
-    public List<Publicacion> getAllPublicaciones() {
+    public List<Publicaciones> getAllPublicaciones() {
         return publicacionService.findAllPublicaciones();
     }
 
     @GetMapping("/{id}")
-    public Publicacion getPublicacionById(@PathVariable Long id) {
+    public Publicaciones getPublicacionById(@PathVariable Long id) {
         return publicacionService.findPublicacionById(id).orElse(null);
     }
 
     @PostMapping
-    public Publicacion createPublicacion(@RequestBody Publicacion publicacion) {
-        return publicacionService.savePublicacion(publicacion);
+    public Publicaciones createPublicacion(@RequestBody Publicaciones publicaciones) {
+        return publicacionService.savePublicacion(publicaciones);
     }
 
     @DeleteMapping("/{id}")

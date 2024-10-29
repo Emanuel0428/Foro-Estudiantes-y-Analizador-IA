@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Table(name = "usuarios")
+@Table(name = "Usuario")
 public class Usuario {
 
     @Id
@@ -27,82 +27,50 @@ public class Usuario {
     @Column(name = "fecha_registro", nullable = false)
     private Date Fecha_Registro;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "usuarios_roles",
-            joinColumns = @JoinColumn(name = "id_usuario"),
-            inverseJoinColumns = @JoinColumn(name = "id_rol"))
-    private Set<Rol> roles = new HashSet<>();
-
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Publicacion> publicaciones;
-
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Calificacion> calificaciones;
-
 
     // Getters y Setters
 
-    public Long getId() {
-        return id;
+    public int getId() {
+        return DocId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public String Nombre(){
+        return Nombre;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String Correo(){
+        return Correo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String Contrasena(){
+        return Contrasena;
     }
 
-    public String getCorreo() {
-        return correo;
+    public Date Fecha_Registro(){
+        return Fecha_Registro;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setId(int DocId) {
+        this.DocId = DocId;
     }
 
-    public String getContrasena() {
-        return contrasena;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
+    public void setCorreo(String Correo) {
+        this.Correo = Correo;
     }
 
-    public LocalDate getFechaRegistro() {
-        return fechaRegistro;
+    public void setContrasena(String Contrasena) {
+        this.Contrasena = Contrasena;
     }
 
-    public void setFechaRegistro(LocalDate fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
-    public Set<Rol> getRoles() {
-        return roles;
-    }
-    public void setRoles(Set<Rol> roles) {
-        this.roles = roles;
+    public void setFecha_Registro(Date Fecha_Registro) {
+        this.Fecha_Registro = Fecha_Registro;
     }
 
-    public List<Publicacion> getPublicaciones() {
-        return publicaciones;
-    }
 
-    public void setPublicaciones(List<Publicacion> publicaciones) {
-        this.publicaciones = publicaciones;
-    }
-
-    public List<Calificacion> getCalificaciones() {
-        return calificaciones;
-    }
-
-    public void setCalificaciones(List<Calificacion> calificaciones) {
-        this.calificaciones = calificaciones;
-    }
 
 }
 
