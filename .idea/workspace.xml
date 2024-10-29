@@ -7,31 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Calificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Departamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Facultad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Publicacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Reaccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Rol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/UsuarioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Emanuel0428/Foro-Estudiantes-y-Analizador-IA.git",
+    "accountId": "c6f80d28-ea20-4827-8e2c-0d02e6fff83b"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -167,7 +149,7 @@
       <workItem from="1729969464577" duration="2580000" />
       <workItem from="1730061201565" duration="56000" />
       <workItem from="1730163929655" duration="746000" />
-      <workItem from="1730242331222" duration="155000" />
+      <workItem from="1730242331222" duration="721000" />
     </task>
     <task id="LOCAL-00001" summary="Fase inicial del desarrollo usando spring boot.">
       <option name="closed" value="true" />
@@ -185,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729121553689</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementación modelos de las tablas">
+      <option name="closed" value="true" />
+      <created>1730243051443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730243051443</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +194,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fase inicial del desarrollo usando spring boot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fase inicial del desarrollo usando spring boot." />
+    <MESSAGE value="Implementación modelos de las tablas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación modelos de las tablas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
