@@ -9,20 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas">
       <changelist_data name="Emanuel0428" email="cod2877@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/RolesxUsuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Calificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Curso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Departamento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Facultad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Publicaciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Reaccion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +39,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Emanuel0428"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Emanuel0428&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Emanuel0428/Foro-Estudiantes-y-Analizador-IA.git",
     "accountId": "c6f80d28-ea20-4827-8e2c-0d02e6fff83b"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Emanuel0428",
+    "repository": "Foro-Estudiantes-y-Analizador-IA"
   }
 }]]></component>
   <component name="ProblemsViewState">
@@ -88,7 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Debug",
-    "git-widget-placeholder": "feature",
+    "git-widget-placeholder": "#1 on feature",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/cod28/OneDrive - UPB/Documents/Uni 2024-2/Algoritmos/Taller4_ELO",
     "node.js.detected.package.eslint": "true",

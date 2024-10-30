@@ -27,6 +27,12 @@ public class Roles {
         return DescripRol;
     }
 
+    public void setIdRol(Long IdRol) {
+        this.IdRol = IdRol;
+    }
 
+    public void setDescripRol(String DescripRol) {
+        this.DescripRol = DescripRol;
+    }
 }
 
