@@ -12,7 +12,7 @@ import java.util.Set;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, length = 12)
     private int DocId;
 
     @Column(nullable = false, length = 100)
@@ -71,6 +71,8 @@ public class Usuario {
     }
 
 
-
+    public Object getContrasena() {
+        return Contrasena;
+    }
 }
 

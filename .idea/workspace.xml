@@ -9,8 +9,32 @@
   <component name="ChangeListManager">
     <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas">
       <changelist_data name="Emanuel0428" email="cod2877@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/ComentariosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolesxUsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/ComentariosRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolesxUsuariosRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/ComentariosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolesxUsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/formPublicacion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +85,9 @@
     "repository": "Foro-Estudiantes-y-Analizador-IA"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.1.13/spring-beans-6.1.13-sources.jar!/org/springframework/beans/factory/annotation/Autowired.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>

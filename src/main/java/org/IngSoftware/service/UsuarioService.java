@@ -22,31 +22,25 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public Optional<Usuario> obtenerUsuarioPorId(Long id) {
-        return usuarioRepository.findById(id);
+    public Optional<Usuario> obtenerUsuarioPorId(int DocId) {
+        return usuarioRepository.findById((long) DocId);
     }
 
-    public Optional<Usuario> obtenerUsuarioPorCorreo(String correo) {
-        return usuarioRepository.findByCorreo(correo);
+    public Optional<Usuario> obtenerUsuarioPorCorreo(String Correo) {
+        return usuarioRepository.findByCorreo(Correo);
     }
 
     public Usuario guardarUsuario(Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
 
-    public void eliminarUsuario(Long id) {
-        usuarioRepository.deleteById(id);
+    public void eliminarUsuario(int DocId) {
+        usuarioRepository.deleteById((long) DocId);
     }
 
-    public Usuario actualizarUsuario(Long id, Usuario usuarioActualizado) {
-        return usuarioRepository.findById(id)
-                .map(usuario -> {
-                    usuario.setNombre(usuarioActualizado.getNombre());
-                    usuario.setCorreo(usuarioActualizado.getCorreo());
-                    usuario.setContrasena(usuarioActualizado.getContrasena());
-                    usuario.setRoles(usuarioActualizado.getRoles());
-                    return usuarioRepository.save(usuario);
-                })
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con id: " + id));
+    public boolean existeUsuarioPorCorreo(String Correo) {
+        return usuarioRepository.existsByCorreo(Correo);
     }
+
+
 }

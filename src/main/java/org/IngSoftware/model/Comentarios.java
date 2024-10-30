@@ -14,9 +14,11 @@ public class Comentarios {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int IdComentario;
 
+    @ManyToOne
     @JoinColumn(name = "IdPublicaciones", nullable = false)
     private Publicaciones publicaciones;
 
+    @ManyToOne
     @JoinColumn(name = "DocId", nullable = false)
     private int docId;
 

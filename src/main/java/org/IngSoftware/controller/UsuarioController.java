@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/usuarios")
+@RequestMapping("/api/Usuarios")
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
@@ -22,41 +22,39 @@ public class UsuarioController {
     }
 
     @GetMapping
-    public List<Usuario> obtenerTodosLosUsuarios() {
-        return usuarioService.obtenerTodosLosUsuarios();
+    public ResponseEntity<List<Usuario>> obtenerTodosLosUsuarios() {
+        List<Usuario> usuarios = usuarioService.obtenerTodosLosUsuarios();
+        return new ResponseEntity<>(usuarios, HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Usuario> obtenerUsuarioPorId(@PathVariable Long id) {
-        Optional<Usuario> usuario = usuarioService.obtenerUsuarioPorId(id);
-        return usuario.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    @GetMapping(path = "{DocId}")
+    public ResponseEntity<Optional<Usuario>> obtenerUsuarioPorId(@PathVariable("DocId") int DocId) {
+        Optional<Usuario> usuario = usuarioService.obtenerUsuarioPorId(DocId);
+        return new ResponseEntity<>(usuario, HttpStatus.OK);
     }
 
-    @GetMapping("/correo/{correo}")
-    public ResponseEntity<Usuario> obtenerUsuarioPorCorreo(@PathVariable String correo) {
-        Optional<Usuario> usuario = usuarioService.obtenerUsuarioPorCorreo(correo);
-        return usuario.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    @GetMapping(path = "/Correo/{Correo}")
+    public ResponseEntity<Optional<Usuario>> obtenerUsuarioPorCorreo(@PathVariable("Correo") String Correo) {
+        Optional<Usuario> usuario = usuarioService.obtenerUsuarioPorCorreo(Correo);
+        return new ResponseEntity<>(usuario, HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> crearUsuario(@RequestBody Usuario usuario) {
+    public ResponseEntity<Usuario> guardarUsuario(@RequestBody Usuario usuario) {
         Usuario nuevoUsuario = usuarioService.guardarUsuario(usuario);
         return new ResponseEntity<>(nuevoUsuario, HttpStatus.CREATED);
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Usuario> actualizarUsuario(@PathVariable Long id, @RequestBody Usuario usuarioActualizado) {
-        try {
-            Usuario usuario = usuarioService.actualizarUsuario(id, usuarioActualizado);
-            return ResponseEntity.ok(usuario);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    @DeleteMapping(path = "{DocId}")
+    public ResponseEntity<?> eliminarUsuario(@PathVariable("DocId") int DocId) {
+        usuarioService.eliminarUsuario(DocId);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarUsuario(@PathVariable Long id) {
-        usuarioService.eliminarUsuario(id);
-        return ResponseEntity.noContent().build();
+    @GetMapping(path = "/Correo/{Correo}/existe")
+    public ResponseEntity<Boolean> existeUsuarioPorCorreo(@PathVariable("Correo") String Correo) {
+        boolean existe = usuarioService.existeUsuarioPorCorreo(Correo);
+        return new ResponseEntity<>(existe, HttpStatus.OK);
     }
+    
 }

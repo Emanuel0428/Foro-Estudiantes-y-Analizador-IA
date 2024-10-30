@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Página Principal</title>
+</head>
+<body>
+<h1>Bienvenido, <span th:text="${usuario.nombre}">Usuario</span></h1>
+
+<!-- Botones para realizar otras acciones -->
+<a th:href="@{/publicaciones}">Ver Publicaciones</a>
+<a th:href="@{/logout}">Cerrar Sesión</a>
+</body>
+</html>
