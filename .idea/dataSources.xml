@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="IngenieriaSoftware@localhost" uuid="0af3d8f9-a522-44a2-9c01-5e886142802a">
-      <driver-ref>sqlserver.ms</driver-ref>
+    <data-source source="LOCAL" name="sqlserver@serverseraquepierdo.database.windows.net" uuid="4820ad30-7200-4c6b-a1a3-585a17d74139">
+      <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost:1433;databaseName=IngenieriaSoftware</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://serverseraquepierdo.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;database=BD_NOTASFORO</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />

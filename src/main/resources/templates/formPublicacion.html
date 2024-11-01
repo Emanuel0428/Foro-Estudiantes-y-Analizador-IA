@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear/Editar Publicación</title>
+</head>
+<body>
+<h2 th:text="${publicacion.id != null ? 'Editar Publicación' : 'Nueva Publicación'}">Publicación</h2>
+<form th:action="@{/publicaciones/guardar}" method="post" th:object="${publicacion}">
+    <input type="hidden" th:field="*{id}" />
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" th:field="*{titulo}" required>
+
+    <label for="contenido">Contenido:</label>
+    <textarea id="contenido" th:field="*{contenido}" required></textarea>
+
+    <button type="submit" th:text="${publicacion.id != null ? 'Actualizar' : 'Crear'}">Crear</button>
+</form>
+</body>
+</html>

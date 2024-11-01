@@ -1,6 +1,6 @@
 package org.IngSoftware;
 
-import org.IngSoftware.model.UsuarioModel;
+import org.IngSoftware.model.Usuario;
 import org.IngSoftware.service.UsuarioService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,17 +20,17 @@ public class Main {
     public CommandLineRunner commandLineRunner(UsuarioService usuarioService) {
         return args -> {
             // Crear un nuevo usuario para probar la conexión
-            UsuarioModel nuevoUsuarioModel = new UsuarioModel();
-            nuevoUsuarioModel.setNombre("Juan Pérez");
-            nuevoUsuarioModel.setEmail("juan.perez@example.com");
+            Usuario nuevoUsuario = new Usuario();
+            nuevoUsuario.setNombre("Juan Pérez");
+            nuevoUsuario.setEmail("juan.perez@example.com");
 
             // Guardar el usuario en la base de datos
-            usuarioService.saveUsuario(nuevoUsuarioModel);
+            usuarioService.saveUsuario(nuevoUsuario);
 
             // Obtener todos los usuarios y mostrarlos
-            List<UsuarioModel> usuarioModels = usuarioService.getAllUsuarios();
-            usuarioModels.forEach(usuarioModel -> {
-                System.out.println("ID: " + usuarioModel.getId() + ", Nombre: " + usuarioModel.getNombre() + ", Email: " + usuarioModel.getEmail());
+            List<Usuario> usuarios = usuarioService.getAllUsuarios();
+            usuarios.forEach(usuario -> {
+                System.out.println("ID: " + usuario.getId() + ", Nombre: " + usuario.getNombre() + ", Email: " + usuario.getEmail());
             });
         };
     }
