@@ -3,7 +3,7 @@ package org.IngSoftware.controller;
 import org.IngSoftware.model.Usuario;
 import org.IngSoftware.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder; // Asegúrate de importar esto
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.Optional;
 
 @Controller
-public class LoginController {
+public class AuthController {
 
     @Autowired
     private UsuarioService usuarioService;
@@ -23,19 +23,27 @@ public class LoginController {
     private BCryptPasswordEncoder passwordEncoder; // Inyección del encoder
 
     @GetMapping("/login")
-    public String mostrarFormularioLogin(Model model) {
+    public String mostrarFormularioLogin(@RequestParam(value = "logout", required = false) String logout,
+                                         @RequestParam(value = "expired", required = false) String expired,
+                                         Model model) {
+        if (logout != null) {
+            model.addAttribute("Dmessage", "Has cerrado sesión con éxito.");
+        }
+        if (expired != null) {
+            model.addAttribute("message", "Tu sesión ha expirado. Por favor, inicia sesión de nuevo.");
+        }
         return "login";
     }
+
 
     @PostMapping("/login")
     public String procesarLogin(@RequestParam("correo") String correo,
                                 @RequestParam("contrasena") String contrasena,
-                                RedirectAttributes redirectAttributes,
-                                Model model) {
+                                RedirectAttributes redirectAttributes) {
         Optional<Usuario> usuarioOpt = usuarioService.obtenerUsuarioPorCorreo(correo);
 
         if (usuarioOpt.isPresent() && passwordEncoder.matches(contrasena, usuarioOpt.get().getContraseña())) {
-            model.addAttribute("usuario", usuarioOpt.get());
+            redirectAttributes.addFlashAttribute("usuario", usuarioOpt.get());
             return "redirect:/home";  // Redirige a la página principal
         } else {
             redirectAttributes.addFlashAttribute("error", "Credenciales incorrectas");
@@ -43,19 +51,23 @@ public class LoginController {
         }
     }
 
+    @GetMapping("/registro")
+    public String mostrarFormularioRegistro(Model model) {
+        return "registro";
+    }
+
     @PostMapping("/registro")
     public String procesarRegistro(@RequestParam("correo") String correo,
                                    @RequestParam("contrasena") String contrasena,
                                    RedirectAttributes redirectAttributes) {
-        // Validar el correo
         if (!correo.endsWith("@upb.edu.co")) {
             redirectAttributes.addFlashAttribute("error", "El correo debe ser @upb.edu.co");
             return "redirect:/registro"; // Redirige al formulario de registro
         }
 
-        // Validar la contraseña
-        if (!validarContrasena(contrasena)) {
-            redirectAttributes.addFlashAttribute("error", "La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.");
+        // Verificar si el usuario ya existe
+        if (usuarioService.existeUsuarioPorCorreo(correo)) {
+            redirectAttributes.addFlashAttribute("error", "El correo ya está registrado");
             return "redirect:/registro"; // Redirige al formulario de registro
         }
 
@@ -70,13 +82,5 @@ public class LoginController {
 
         redirectAttributes.addFlashAttribute("mensaje", "Usuario registrado exitosamente");
         return "redirect:/login"; // Redirige al formulario de login
-    }
-
-
-    private boolean validarContrasena(String contrasena) {
-        return contrasena.length() >= 8 &&
-                contrasena.matches(".*[A-Z].*") && // Al menos una letra mayúscula
-                contrasena.matches(".*[a-z].*") && // Al menos una letra minúscula
-                contrasena.matches(".*\\d.*"); // Al menos un número
     }
 }

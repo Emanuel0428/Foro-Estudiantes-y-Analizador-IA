@@ -1,11 +1,8 @@
 package org.IngSoftware.model;
 
 import jakarta.persistence.*;
-import java.time.LocalDate;
+
 import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "Usuario")
@@ -22,7 +19,7 @@ public class Usuario {
     private String Correo;
 
     @Column(nullable = false)
-    private String Contrasena;
+    private String Contraseña;
 
     @Column(name = "fecha_registro", nullable = false)
     private Date Fecha_Registro;
@@ -34,19 +31,19 @@ public class Usuario {
         return DocId;
     }
 
-    public String Nombre(){
+    public String getNombre(){
         return Nombre;
     }
 
-    public String Correo(){
+    public String getCorreo(){
         return Correo;
     }
 
-    public String Contrasena(){
-        return Contrasena;
+    public String getContraseña(){
+        return Contraseña;
     }
 
-    public Date Fecha_Registro(){
+    public Date getFecha_Registro(){
         return Fecha_Registro;
     }
 
@@ -62,8 +59,8 @@ public class Usuario {
         this.Correo = Correo;
     }
 
-    public void setContrasena(String Contrasena) {
-        this.Contrasena = Contrasena;
+    public void setContraseña(String Contraseña) {
+        this.Contraseña = Contraseña;
     }
 
     public void setFecha_Registro(Date Fecha_Registro) {
@@ -71,8 +68,5 @@ public class Usuario {
     }
 
 
-    public Object getContrasena() {
-        return Contrasena;
-    }
 }
 

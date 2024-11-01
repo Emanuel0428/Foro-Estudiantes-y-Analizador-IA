@@ -8,33 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ebaa717-e03a-40fe-bec2-8d0869cc150d" name="Changes" comment="Implementación modelos de las tablas">
-      <changelist_data name="Emanuel0428" email="cod2877@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/ComentariosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolesxUsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/ComentariosRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolesxUsuariosRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/ComentariosService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolesxUsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/formPublicacion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.azure/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.azure/default/connections.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.azure/profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0af3d8f9-a522-44a2-9c01-5e886142802a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2cb4b6ca-a29d-47a1-ad5b-e502a2a9b008.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2cb4b6ca-a29d-47a1-ad5b-e502a2a9b008.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/PublicacionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/RolController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Comentarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Roles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/PublicacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/RolesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/PublicacionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/RolesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/IngSoftware/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -69,25 +66,29 @@
     &quot;assignee&quot;: &quot;Emanuel0428&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Emanuel0428/Foro-Estudiantes-y-Analizador-IA.git",
-    "accountId": "c6f80d28-ea20-4827-8e2c-0d02e6fff83b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Emanuel0428/Foro-Estudiantes-y-Analizador-IA.git&quot;,
+    &quot;accountId&quot;: &quot;c6f80d28-ea20-4827-8e2c-0d02e6fff83b&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "Emanuel0428",
-    "repository": "Foro-Estudiantes-y-Analizador-IA"
+    &quot;owner&quot;: &quot;Emanuel0428&quot;,
+    &quot;repository&quot;: &quot;Foro-Estudiantes-y-Analizador-IA&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.1.13/spring-beans-6.1.13-sources.jar!/org/springframework/beans/factory/annotation/Autowired.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -105,7 +106,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "ForoNotasIA.wasFacetEverAdded": "true",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "JavaScript Debug.formPublicacion.html.executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
     "Maven.ForoNotasIA [compile].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -113,23 +121,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Debug",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "#1 on feature",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/cod28/OneDrive - UPB/Documents/Uni 2024-2/Algoritmos/Taller4_ELO",
+    "last_opened_file_path": "C:/Users/cod28/OneDrive - UPB/Documents/Proyectos/AWS_Snake-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "Docker",
+    "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "sqlserver"
+      "sqlserver",
+      "az_cosmos_mongo",
+      "azure"
     ]
   }
 }]]></component>
@@ -143,19 +155,45 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ForoNotasIA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="e4fc077d-4dd3-4d31-9b59-f693c898201a" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="formPublicacion.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ForoNotasIA/templates/formPublicacion.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ForoNotasIA/templates/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ForoNotasIA" />
@@ -168,12 +206,33 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="ConnectionRunnerForConfigurationId" enabled="false">
+          <option name="envFile" value="C:\Users\cod28\IdeaProjects\ForoNotasIA\.azure\default\.env" />
+        </option>
       </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="Prueba1" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="JavaScript Debug.formPublicacion.html" />
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +267,14 @@
       <workItem from="1730061201565" duration="56000" />
       <workItem from="1730163929655" duration="746000" />
       <workItem from="1730242331222" duration="4604000" />
+      <workItem from="1730295599926" duration="17000" />
+      <workItem from="1730295631749" duration="856000" />
+      <workItem from="1730296510889" duration="517000" />
+      <workItem from="1730297048125" duration="2385000" />
+      <workItem from="1730309366363" duration="1614000" />
+      <workItem from="1730311045465" duration="588000" />
+      <workItem from="1730331895244" duration="54000" />
+      <workItem from="1730418693698" duration="5962000" />
     </task>
     <task id="LOCAL-00001" summary="Fase inicial del desarrollo usando spring boot.">
       <option name="closed" value="true" />
@@ -249,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730245409387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementación modelos de las tablas">
+      <option name="closed" value="true" />
+      <created>1730253992441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730253992441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
